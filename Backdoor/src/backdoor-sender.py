@@ -13,7 +13,7 @@ data = connection.recv(2024)
 print(data)
 
 while True:
-    cmd = input("Befehl: ")
+    cmd = input("Command: ")
     connection.send(str.encode(cmd))
     data = connection.recv(2024)
     print(data.decode("utf-8"))
